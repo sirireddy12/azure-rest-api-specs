@@ -566,6 +566,19 @@
         "provisioningState": {
           "$ref": "#/definitions/ConnectedClusterProvisioningState",
           "description": "Provisioning state of the connected cluster resource."
+        },
+        "kubernetesDistro": {
+          "type": "string",
+          "description": "The Kuberenetes distribution on which the agents are running"
+        },
+        "kubernetesInfra": {
+          "type": "string",
+          "description": "The Kubernetes infrastructure on which the agents are running"
+        },
+        "Offering": {
+          "readOnly": "true",
+          "type": "string",
+          "description": "The 1P service name through which Arc onboarding has happened in case of integrated onboarding"
         }
       },
       "description": "Properties of the connected cluster."
